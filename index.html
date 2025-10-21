@@ -1,148 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- html is fun and easy to learn after Java :) -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- html is fun and easy to learn after Java :) -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1 id="intro-text"></h1>
-        <p>Welcome to my portfolio website</p>
+      <h1 id="intro-text"></h1>
+      <p>Welcome to my portfolio website</p>
     </header>
 
     <nav>
-        <ul class="navbar">
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
+      <ul class="navbar">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
     </nav>
 
-    <main>
-        <section id="about">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>I'm a Software Engineering student at Brunel University with 3+ years of leadership experience in logistics and retail. Currently focused on backend development using Java, Python, and SQL, while expanding my skills in HTML, CSS, JavaScript, and React through hands-on projects like this website.</p>
-            </div>
-            <div class="about-photo">
-                <img src="resources/images/profile.jpg" alt="Oguz's Profile Picture" class="hover-color-photo"/>
-            </div>
-        </section>
+    <main class ="container">
+      <section id="about">
+        <div class="card">
+          <h2>About Me</h2>
+          <p>
+            I’m a Software Engineering student at Brunel University, currently
+            in my second year and on track for First Class Honours. I have over
+            three years of leadership experience in logistics and retail
+            operations. My focus is on backend development using Java, SQL, and
+            Python, while expanding my skills in Go, React, and cloud concepts.
+            I’m passionate about solving real-world problems with scalable
+            software and exploring full-stack development through academic and
+            personal projects.
+          </p>
+        </div>
+        <div class="about-photo">
+          <img
+            src="resources/images/profile.jpg"
+            alt="Oguz's Profile Picture"
+            class="hover-color-photo"
+          />
+        </div>
+      </section>
 
-        <section id="contact">
-            <div class="contact-text">
-                <ul>
-                    <h2>Contact</h2>
-                <p>You can reach me via:</p>
-                    <li>Email: <a href="mailto:oguzcayir99@gmail.com">oguzcayir99@gmail.com</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/oguz-kagan-cayir/" target="_blank">https://www.linkedin.com/in/oguz-kagan-cayir/</a></li>
-                 <li>GitHub: <a href="https://github.com/OguzCayir" target="_blank">https://github.com/OguzCayir</a></li>
-                </ul>
-            </div>
-        </section>
+      <section id="contact">
+        <div class="card">
+          <ul>
+            <h2>Contact</h2>
+            <p>You can reach me via:</p>
+            <li>
+              Email:
+              <a href="mailto:oguzcayir99@gmail.com">oguzcayir99@gmail.com</a>
+            </li>
+            <li>
+              LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/oguz-kagan-cayir/"
+                target="_blank"
+                >https://www.linkedin.com/in/oguz-kagan-cayir/</a
+              >
+            </li>
+            <li>
+              GitHub:
+              <a href="https://github.com/OguzCayir" target="_blank"
+                >https://github.com/OguzCayir</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="contact-photo">
+          <img
+            src="resources/images/contactMe.PNG"
+            alt="contact me photo ai generated"
+            class="hover-color-photo"
+          />
+        </div>
+      </section>
 
-        <section id="education">
-            <div class="education-text">
-                <h2>Education</h2>
-                <ul>
-                <li>
-                    <strong>Brunel University London</strong> <br />
-                    BSc in Software Engineering (Expected Graduation: 2027)
-                </li>
-                <li>
-                    <strong>Istanbul University</strong> <br />
-                    Faculty of Law (LLB) (2018-incomplete)
-                </li>
-                <li>
-                    <strong>High School Diploma (Turkey)</strong> <br />
-                    Completed with a focus on Social Sciences and also Mathematics.
-                </li>
-                </ul>
-            </div>
+      <section id="education">
+        <div class="card">
+          <h2>Education</h2>
+          <ul>
+            <li>
+              <strong>Brunel University London</strong><br />
+              BSc in Computer Science / Software Engineering (2024 – 2027,
+              Expected First Class)
+              <p>
+                Year 2 modules: Algorithms, Software Development & Management,
+                Networks & Operating Systems. Developed a Java-based university
+                management system integrating SQLite and SPSS for analytics.
+              </p>
+            </li>
+            <li>
+              <strong>Istanbul University – Law Faculty</strong><br />
+              Studied Law before transitioning to Computer Science (Incomplete).
+            </li>
+            <li>
+              <strong>High School Diploma (Turkey)</strong> <br />
+              Completed with a focus on Social Sciences and also Mathematics.
+            </li>
+          </ul>
+        </div>
 
-            <div class="education-photo">
-                <img src="resources/images/graduation.jpg" alt="Education Background" class="hover-color-photo"/>
-                <img src="resources/images/lawfaculty2.jpg" alt="Education Background" class="hover-color-photo"/>
-                <img src="resources/images/brunel.jpg" alt="Education Background" class="hover-color-photo"/>
-            </div>
-            
-        </section>
+        <div class="education-photo">
+          <img
+            src="resources/images/graduation.jpg"
+            alt="Education Background"
+            class="hover-color-photo"
+          />
+          <img
+            src="resources/images/lawfaculty2.jpg"
+            alt="Education Background"
+            class="hover-color-photo"
+          />
+          <img
+            src="resources/images/brunel.jpg"
+            alt="Education Background"
+            class="hover-color-photo"
+          />
+        </div>
+      </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Languages & Web Technologies:</strong> HTML, CSS, JavaScript (Learning), React (Beginner), JSON</li>
-                <li><strong>Backend & Data:</strong> Java (Intermediate), SQL (Intermediate), Python (Beginner), SQLite, JDBC</li>
-                <li><strong>Tools & Practices:</strong> Git & GitHub, VS Code, Agile Collaboration, Version Control</li>
-                <li><strong>Testing & Debugging:</strong> JUnit, Manual Testing, Debugging Fundamentals</li>
-                <li><strong>Other Skills:</strong> SaaS Product Fundamentals, Basic CI/CD & Cloud Awareness (AWS), IBM SPSS</li>
-                <li><strong>Soft Skills:</strong> Communication, Problem-Solving, Team Leadership</li>
-            </ul>
-        </section>
+      <section id="skills" class ="card">
+        <h2>Skills</h2>
+        <ul>
+          <li>
+            <strong>Programming Languages:</strong> Java (Intermediate), SQL
+            (Intermediate), Python (Beginner), Go (Beginner)
+          </li>
+          <li>
+            <strong>Web & Frontend:</strong> HTML, CSS, React (Beginner), Figma
+            (UI/UX Basics)
+          </li>
+          <li>
+            <strong>Backend & Databases:</strong> JDBC, SQLite, JSON Data
+            Handling
+          </li>
+          <li>
+            <strong>Software Practices:</strong> Agile Collaboration, Version
+            Control (Git & GitHub), CI/CD Principles
+          </li>
+          <li>
+            <strong>Testing & Debugging:</strong> JUnit, Manual Testing,
+            Debugging Fundamentals
+          </li>
+          <li>
+            <strong>Cloud & Data:</strong> AWS Basics, IBM SPSS, Excel, Data
+            Analysis & Interpretation
+          </li>
+          <li>
+            <strong>Professional Strengths:</strong> Communication,
+            Problem-Solving, Leadership, Operations Management
+          </li>
+        </ul>
+      </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
-            <!-- em = emphasis means important and rendered in italics -->
-                <h3><em>Bibi’s | Operations Manager</em></h3>
-                <p>London | May 2023 – June 2024</p>
-                <ul>
-                    <li>Oversaw operations across multiple locations, processing 1,000+ daily orders</li>
-                    <li>Created and maintained P&L reports, forecasts, and supplier communication</li>
-                    <li>Recruited, trained, and supervised staff, ensuring compliance with H&S and food safety standards</li>
-                </ul>
+      <section id="experience" class ="card">
+        <h2>Experience</h2>
+        <!-- em = emphasis means important and rendered in italics -->
+        <h3><em>Bibi’s | Operations Manager</em></h3>
+        <p>London | May 2023 – June 2024</p>
+        <ul>
+          <li>
+            Oversaw operations across multiple locations, processing 1,000+
+            daily orders
+          </li>
+          <li>
+            Created and maintained P&L reports, forecasts, and supplier
+            communication
+          </li>
+          <li>
+            Recruited, trained, and supervised staff, ensuring compliance with
+            H&S and food safety standards
+          </li>
+        </ul>
 
-                <h3><em>Rudy’s Vegan | Sales & Operations Lead</em></h3>
-                <p>London | Jun 2022 – May 2023</p>
-                <ul>
-                    <li>Managed logistics between production, warehouse, and customers</li>
-                    <li>Supported sales team in client presentations, delivery tracking, and deal execution</li>
-                    <li>Sourced logistics and marketing partnerships to improve operational efficiency</li>
-                </ul>
+        <h3><em>Rudy’s Vegan | Sales & Operations Lead</em></h3>
+        <p>London | Jun 2022 – May 2023</p>
+        <ul>
+          <li>
+            Managed logistics between production, warehouse, and customers
+          </li>
+          <li>
+            Supported sales team in client presentations, delivery tracking, and
+            deal execution
+          </li>
+          <li>
+            Sourced logistics and marketing partnerships to improve operational
+            efficiency
+          </li>
+        </ul>
 
-                <h3><em>Yango (Yandex Go) | Continuous Improvement Manager</em></h3>
-                <p>London | Jul 2021 – Aug 2022</p>
-                <ul>
-                    <li>Developed monthly Goods Discrepancy Report and staff Competence Matrix</li>
-                    <li>Trained and supervised teams using structured SOPs and ISpring platform</li>
-                    <li>Led launch planning for “Hot Food Delivery” initiative—cost, menu, packaging</li>
-                    <li>Designed 30+ SOPs and competency training modules using ISpring</li>
-                    <li>Audited performance data and reduced warehouse write-offs to &lt;2%</li>
-                    <li>Collaborated with commercial and supply chain to improve KPI targets</li>
-                </ul>
+        <h3><em>Yango (Yandex Go) | Continuous Improvement Manager</em></h3>
+        <p>London | Jul 2021 – Aug 2022</p>
+        <ul>
+          <li>
+            Developed monthly Goods Discrepancy Report and staff Competence
+            Matrix
+          </li>
+          <li>
+            Trained and supervised teams using structured SOPs and ISpring
+            platform
+          </li>
+          <li>
+            Led launch planning for “Hot Food Delivery” initiative—cost, menu,
+            packaging
+          </li>
+          <li>
+            Designed 30+ SOPs and competency training modules using ISpring
+          </li>
+          <li>
+            Audited performance data and reduced warehouse write-offs to &lt;2%
+          </li>
+          <li>
+            Collaborated with commercial and supply chain to improve KPI targets
+          </li>
+        </ul>
 
-                <h3><em>Getir UK | Team Leader</em></h3>
-                <p>London | Apr 2021 – Jul 2021</p>
-                <ul>
-                    <li>Promoted to lead shifts with 15+ team members in a store handling 600+ orders daily</li>
-                    <li>Achieved top results in order pick and delivery time metrics</li>
-                </ul>
-        </section>
+        <h3><em>Getir UK | Team Leader</em></h3>
+        <p>London | Apr 2021 – Jul 2021</p>
+        <ul>
+          <li>
+            Promoted to lead shifts with 15+ team members in a store handling
+            600+ orders daily
+          </li>
+          <li>Achieved top results in order pick and delivery time metrics</li>
+        </ul>
+      </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <strong>Portfolio Website</strong> <br />
-                    A personal website showcasing my skills and projects, built with HTML, CSS, and JavaScript.
-                </li>
-                <li>
-                    <strong>University Projects</strong> <br />
-                    Worked on backend systems using Java and SQL to manage academic data.
-                </li>
-                <li>
-                    <strong>Expense Tracker (Python + SQLite)</strong> <br />
-                    A Python application that tracks expenses and generates reports, utilizing SQLite for data storage.
-                </li>
-            </ul>
-        </section> 
-        </main>
+      <section id="projects" class ="card">
+        <h2>Projects</h2>
+        <ul>
+          <li>
+            <strong>University Management System</strong><br />
+            Java-based backend module managing attendance and records.
+            Integrated JDBC and SQLite, with data analysis via SPSS.
+          </li>
+          <li>
+            <strong>Personal Portfolio Website</strong><br />
+            Developed with HTML, CSS, and JavaScript to showcase my skills and
+            career progress. Future plans include migration to React.
+          </li>
+          <li>
+            <strong>Expense Tracker (Python + SQLite)</strong> <br />
+            A Python application that tracks expenses and generates reports,
+            utilizing SQLite for data storage.
+          </li>
+        </ul>
+      </section>
+    </main>
 
-        <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
