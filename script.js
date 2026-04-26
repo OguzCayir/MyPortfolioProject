@@ -1,29 +1,26 @@
-//looping through the text 
-const text = "Hi, I am Oguz";
-let i = 0;
+const introText = "Hi, I am Oguz";
+let charIndex = 0;
+
 function typeWriter() {
-  if (i < text.length) {
-    document.getElementById("intro-text").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typeWriter, 100); // Speed of typing
+  const el = document.getElementById("intro-text");
+  if (charIndex < introText.length) {
+    el.textContent += introText.charAt(charIndex);
+    charIndex++;
+    setTimeout(typeWriter, 100);
   }
 }
 
-window.onload = typeWriter;
+document.addEventListener("DOMContentLoaded", () => {
+  typeWriter();
 
-//fade-in effect for sections
-document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("fade-in");
       }
     });
-  }, {
-    threshold: 0.1
-  });
+  }, { threshold: 0.1 });
 
   sections.forEach((section) => {
     section.classList.add("hidden");
@@ -31,15 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Smooth scrolling for navigation links
 const navLinks = document.querySelectorAll("nav a");
 
 window.addEventListener("scroll", () => {
   let current = "";
 
   document.querySelectorAll("section").forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (scrollY >= sectionTop - 100) {
+    if (window.scrollY >= section.offsetTop - 100) {
       current = section.getAttribute("id");
     }
   });

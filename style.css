@@ -73,8 +73,13 @@ a:hover {
 
 h2 {
   color: #B28850;
-  /* Dark heading */
   margin-bottom: 1rem;
+}
+
+h3 {
+  color: #4B2E2B;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
 }
 
 ul {

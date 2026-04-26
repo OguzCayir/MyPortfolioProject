@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- html is fun and easy to learn after Java :) -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Oguz Cayir | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,19 +26,17 @@
       </ul>
     </nav>
 
-    <main class ="container">
+    <main class="container">
       <section id="about">
         <div class="card">
           <h2>About Me</h2>
           <p>
-            I’m a Software Engineering student at Brunel University, currently
-            in my second year and on track for First Class Honours. I have over
-            three years of leadership experience in logistics and retail
-            operations. My focus is on backend development using Java, SQL, and
-            Python, while expanding my skills in Go, React, and cloud concepts.
-            I’m passionate about solving real-world problems with scalable
-            software and exploring full-stack development through academic and
-            personal projects.
+            I'm a Software Engineering student at Brunel University, on track for First Class Honours.
+            I focus on backend development with hands-on experience in Java, Spring Boot, and SQL.
+            I've built and deployed RESTful APIs backed by PostgreSQL as part of a collaborative Agile team
+            project, with practical experience in REST API design, JWT authentication, and cloud-hosted
+            databases. I'm passionate about applying scalable software solutions to real-world challenges and
+            bring adaptability and problem-solving skills from both academic and professional environments.
           </p>
         </div>
         <div class="about-photo">
@@ -50,33 +50,34 @@
 
       <section id="contact">
         <div class="card">
+          <h2>Contact</h2>
+          <p>You can reach me via:</p>
           <ul>
-            <h2>Contact</h2>
-            <p>You can reach me via:</p>
             <li>
-              Email:
-              <a href="mailto:oguzcayir99@gmail.com">oguzcayir99@gmail.com</a>
+              Email: <a href="mailto:oguzcayir99@gmail.com">oguzcayir99@gmail.com</a>
             </li>
             <li>
               LinkedIn:
               <a
                 href="https://www.linkedin.com/in/oguz-kagan-cayir/"
                 target="_blank"
-                >https://www.linkedin.com/in/oguz-kagan-cayir/</a
-              >
+                rel="noopener noreferrer"
+              >linkedin.com/in/oguz-kagan-cayir</a>
             </li>
             <li>
               GitHub:
-              <a href="https://github.com/OguzCayir" target="_blank"
-                >https://github.com/OguzCayir</a
-              >
+              <a
+                href="https://github.com/OguzCayir"
+                target="_blank"
+                rel="noopener noreferrer"
+              >github.com/OguzCayir</a>
             </li>
           </ul>
         </div>
         <div class="contact-photo">
           <img
             src="resources/images/contactMe.PNG"
-            alt="contact me photo ai generated"
+            alt="Contact illustration"
             class="hover-color-photo"
           />
         </div>
@@ -85,171 +86,155 @@
       <section id="education">
         <div class="card">
           <h2>Education</h2>
-          <ul>
-            <li>
-              <strong>Brunel University London</strong><br />
-              BSc in Computer Science / Software Engineering (2024 – 2027,
-              Expected First Class)
-              <p>
-                Year 2 modules: Algorithms, Software Development & Management,
-                Networks & Operating Systems. Developed a Java-based university
-                management system integrating SQLite and SPSS for analytics.
-              </p>
-            </li>
-            <li>
-              <strong>Istanbul University – Law Faculty</strong><br />
-              Studied Law before transitioning to Computer Science (Incomplete).
-            </li>
-            <li>
-              <strong>High School Diploma (Turkey)</strong> <br />
-              Completed with a focus on Social Sciences and also Mathematics.
-            </li>
-          </ul>
+
+          <h3>Brunel University London</h3>
+          <p><strong>BSc in Computer Science / Software Engineering</strong> (2024 – 2027, Expected First Class)</p>
+          <p>
+            <em>Year Two Modules:</em> Software Development and Management, Usability Engineering,
+            Fundamentals of Algorithms, Algorithms and their Applications, Networks and Operating Systems,
+            Group Project. Covered software architecture and design patterns, user-centred design and
+            usability evaluation, TCP/IP networking and OS fundamentals, and algorithms spanning data
+            structures, complexity analysis, and optimisation techniques including genetic algorithms,
+            hill climbing, ant colony optimisation, and data clustering.
+          </p>
+          <p>
+            <em>Year One Modules (First Class overall):</em> Logic and Computation (A+), Data and
+            Information (A), Group Project (A-), Introductory Programming (A-), Information Systems
+            and Organisations (A-)
+          </p>
+
+          <h3>Seoul National University, South Korea</h3>
+          <p><strong>Summer School – Summer 2026</strong></p>
+          <p>Business AI: Machine Learning, Generative AI, and Strategic Impact</p>
+
+          <h3>Istanbul University — Law Faculty</h3>
+          <p>
+            Studied Law before transitioning to Computer Science (Incomplete).
+            Admitted following top 0.19% placement (rank 3,624 / 1,877,568) in the Turkish National
+            University Entrance Exam (YKS).
+          </p>
+
+          <h3>High School Diploma (Turkey)</h3>
+          <p>Completed with a focus on Social Sciences and Mathematics.</p>
         </div>
 
         <div class="education-photo">
-          <img
-            src="resources/images/graduation.jpg"
-            alt="Education Background"
-            class="hover-color-photo"
-          />
-          <img
-            src="resources/images/lawfaculty2.jpg"
-            alt="Education Background"
-            class="hover-color-photo"
-          />
-          <img
-            src="resources/images/brunel.jpg"
-            alt="Education Background"
-            class="hover-color-photo"
-          />
+          <img src="resources/images/graduation.jpg" alt="Graduation" class="hover-color-photo" />
+          <img src="resources/images/lawfaculty2.jpg" alt="Istanbul University Law Faculty" class="hover-color-photo" />
+          <img src="resources/images/brunel.jpg" alt="Brunel University" class="hover-color-photo" />
         </div>
       </section>
 
-      <section id="skills" class ="card">
+      <section id="skills" class="card">
         <h2>Skills</h2>
         <ul>
           <li>
-            <strong>Programming Languages:</strong> Java (Intermediate), SQL
-            (Intermediate), Python (Beginner), Go (Beginner)
+            <strong>Languages:</strong> Java (Intermediate), SQL (Intermediate), Python (Intermediate), Go (Beginner)
           </li>
           <li>
-            <strong>Web & Frontend:</strong> HTML, CSS, React (Beginner), Figma
-            (UI/UX Basics)
+            <strong>Backend:</strong> Spring Boot, Spring Data JPA, Spring Security, Maven, REST API Design, JWT Authentication
           </li>
           <li>
-            <strong>Backend & Databases:</strong> JDBC, SQLite, JSON Data
-            Handling
+            <strong>Databases:</strong> PostgreSQL, SQLite, JDBC, JSON Data Handling
           </li>
           <li>
-            <strong>Software Practices:</strong> Agile Collaboration, Version
-            Control (Git & GitHub), CI/CD Principles
+            <strong>Testing:</strong> JUnit 5, Mockito, Manual Testing, Debugging
           </li>
           <li>
-            <strong>Testing & Debugging:</strong> JUnit, Manual Testing,
-            Debugging Fundamentals
+            <strong>Frontend:</strong> HTML, CSS, Java Swing, React (Beginner), Figma (UI/UX Basics)
           </li>
           <li>
-            <strong>Cloud & Data:</strong> AWS Basics, IBM SPSS, Excel, Data
-            Analysis & Interpretation
+            <strong>Tools & Practices:</strong> Git & GitHub, Agile Collaboration, UML Modelling, CI/CD Principles, Docker
           </li>
           <li>
-            <strong>Professional Strengths:</strong> Communication,
-            Problem-Solving, Leadership, Operations Management
+            <strong>Cloud & Data:</strong> AWS Basics, IBM SPSS, Excel, Data Analysis & Interpretation, SaaS Product Knowledge
+          </li>
+          <li>
+            <strong>Professional Strengths:</strong> Communication, Problem-Solving, Leadership, Operations Management
           </li>
         </ul>
       </section>
 
-      <section id="experience" class ="card">
+      <section id="experience" class="card">
         <h2>Experience</h2>
-        <!-- em = emphasis means important and rendered in italics -->
-        <h3><em>Bibi’s | Operations Manager</em></h3>
+
+        <h3><em>Bibi's | Operations Manager</em></h3>
         <p>London | May 2023 – June 2024</p>
         <ul>
-          <li>
-            Oversaw operations across multiple locations, processing 1,000+
-            daily orders
-          </li>
-          <li>
-            Created and maintained P&L reports, forecasts, and supplier
-            communication
-          </li>
-          <li>
-            Recruited, trained, and supervised staff, ensuring compliance with
-            H&S and food safety standards
-          </li>
+          <li>Oversaw operations across multiple locations, processing 1,000+ daily orders</li>
+          <li>Created and maintained P&L reports, forecasts, and supplier communication</li>
+          <li>Recruited, trained, and supervised staff, ensuring compliance with H&S and food safety standards</li>
         </ul>
 
-        <h3><em>Rudy’s Vegan | Sales & Operations Lead</em></h3>
+        <h3><em>Rudy's Vegan | Sales & Operations Lead</em></h3>
         <p>London | Jun 2022 – May 2023</p>
         <ul>
-          <li>
-            Managed logistics between production, warehouse, and customers
-          </li>
-          <li>
-            Supported sales team in client presentations, delivery tracking, and
-            deal execution
-          </li>
-          <li>
-            Sourced logistics and marketing partnerships to improve operational
-            efficiency
-          </li>
+          <li>Managed logistics between production, warehouse, and customers</li>
+          <li>Supported sales team in client presentations, delivery tracking, and deal execution</li>
+          <li>Sourced logistics and marketing partnerships to improve operational efficiency</li>
         </ul>
 
         <h3><em>Yango (Yandex Go) | Continuous Improvement Manager</em></h3>
         <p>London | Jul 2021 – Aug 2022</p>
         <ul>
-          <li>
-            Developed monthly Goods Discrepancy Report and staff Competence
-            Matrix
-          </li>
-          <li>
-            Trained and supervised teams using structured SOPs and ISpring
-            platform
-          </li>
-          <li>
-            Led launch planning for “Hot Food Delivery” initiative—cost, menu,
-            packaging
-          </li>
-          <li>
-            Designed 30+ SOPs and competency training modules using ISpring
-          </li>
-          <li>
-            Audited performance data and reduced warehouse write-offs to &lt;2%
-          </li>
-          <li>
-            Collaborated with commercial and supply chain to improve KPI targets
-          </li>
+          <li>Developed monthly Goods Discrepancy Report and staff Competence Matrix</li>
+          <li>Trained and supervised teams using structured SOPs and ISpring platform</li>
+          <li>Led launch planning for "Hot Food Delivery" initiative — cost, menu, packaging</li>
+          <li>Designed 30+ SOPs and competency training modules using ISpring</li>
+          <li>Audited performance data and reduced warehouse write-offs to &lt;2%</li>
+          <li>Collaborated with commercial and supply chain to improve KPI targets</li>
         </ul>
 
         <h3><em>Getir UK | Team Leader</em></h3>
         <p>London | Apr 2021 – Jul 2021</p>
         <ul>
-          <li>
-            Promoted to lead shifts with 15+ team members in a store handling
-            600+ orders daily
-          </li>
+          <li>Promoted to lead shifts with 15+ team members in a store handling 600+ orders daily</li>
           <li>Achieved top results in order pick and delivery time metrics</li>
         </ul>
       </section>
 
-      <section id="projects" class ="card">
+      <section id="projects" class="card">
         <h2>Projects</h2>
+
+        <h3>EquiShare – Cross-University Equipment Booking Platform</h3>
+        <p><em>2025–2026 | Java, Spring Boot, PostgreSQL, Spring Security, JUnit 5, Mockito</em></p>
+        <p>
+          A full-stack group project built with a 4-person Agile team at Brunel University. Served as Scrum Master
+          in Sprint 1 and Database Lead for backend development. Built 6 RESTful API endpoints, designed a
+          PostgreSQL database schema, integrated Spring Security with JWT-based authentication, and validated
+          backend logic with JUnit 5 and Mockito. Connected the live backend to frontend HTML/JS pages,
+          replacing all mock JSON data with real API calls.
+        </p>
+
+        <h3>University Management System – Attendance Monitoring</h3>
+        <p><em>2024–2025 | Java, Java Swing, SQLite, JDBC</em></p>
+        <p>
+          A Year 1 Java desktop application built to monitor student attendance, supporting both student and
+          admin roles. Developed a multi-panel GUI using Java Swing and connected it to a SQLite database via
+          JDBC, capable of handling over 400,000 student records. Implemented role-based authentication,
+          date-range filtering with custom SQL date formatting logic, and an admin dashboard with search and
+          filter capabilities. Built a custom pie chart visualisation from scratch using Java's Graphics2D
+          library, with no external dependencies.
+        </p>
+
+        <h3>Personal Portfolio Website</h3>
+        <p><em>HTML, CSS, JavaScript</em></p>
+        <p>
+          This website — built with HTML, CSS, and vanilla JavaScript, featuring smooth scroll, an
+          Intersection Observer for fade-in animations, and active nav highlighting on scroll.
+        </p>
+
+        <h3>Expense Tracker</h3>
+        <p><em>Python, SQLite</em></p>
+        <p>
+          A Python application that tracks personal expenses and generates reports, using SQLite for storage.
+        </p>
+
+        <h3>International Achievements</h3>
         <ul>
           <li>
-            <strong>University Management System</strong><br />
-            Java-based backend module managing attendance and records.
-            Integrated JDBC and SQLite, with data analysis via SPSS.
-          </li>
-          <li>
-            <strong>Personal Portfolio Website</strong><br />
-            Developed with HTML, CSS, and JavaScript to showcase my skills and
-            career progress. Future plans include migration to React.
-          </li>
-          <li>
-            <strong>Expense Tracker (Python + SQLite)</strong> <br />
-            A Python application that tracks expenses and generates reports,
-            utilizing SQLite for data storage.
+            Participated in three EU-funded international exchange programmes during secondary school —
+            Comenius (Hungary, 2014), Erasmus (Poland, 2017), YouthPass (Italy, 2017)
           </li>
         </ul>
       </section>
