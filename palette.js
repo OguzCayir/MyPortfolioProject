@@ -19,6 +19,7 @@
     { label: "Projects: ls ~/work", hint: "#work", act: go("work") },
     { label: "Skills", hint: "#skills", act: go("skills") },
     { label: "Outside work", hint: "#beyond", act: go("beyond") },
+    { label: "Download CV (PDF)", hint: "pdf", act: () => { const a = document.createElement("a"); a.href = "Oguz-Kagan-Cayir-CV.pdf"; a.download = ""; document.body.appendChild(a); a.click(); a.remove(); } },
     { label: "Email Oguz", hint: "mailto", act: () => (location.href = "mailto:oguzcayir99@gmail.com") },
     { label: "Open GitHub", hint: "link", act: () => (location.href = "https://github.com/OguzCayir") },
     { label: "Open LinkedIn", hint: "link", act: () => (location.href = "https://www.linkedin.com/in/oguz-kagan-cayir/") },

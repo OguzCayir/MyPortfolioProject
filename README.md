@@ -28,6 +28,7 @@ Plain HTML, CSS and JavaScript, with no framework, no build step and no dependen
 
 ```
 index.html        the page
+Oguz-Kagan-Cayir-CV.pdf  downloadable CV (web copy, no phone number)
 style.css         styles
 lab.js            live Pareto-front routing demo
 palette.js        Ctrl/⌘K command palette

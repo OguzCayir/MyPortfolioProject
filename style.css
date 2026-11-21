@@ -240,3 +240,8 @@ h1 { font-size: clamp(3rem, 7vw, 6.2rem); }
   .years { grid-template-columns: 1fr; }
   .shelf ul { grid-template-columns: 1fr 1fr; }
 }
+
+.btn .fmt { font-weight: 400; opacity: .7; }
+.quick-links { display: flex; flex-wrap: wrap; gap: .4rem 1.5rem; margin: 1rem 0 0; font: .85rem var(--mono); }
+.quick-links a { color: var(--ink); text-underline-offset: 3px; }
+.quick-links a::before { content: "→ "; color: var(--ops-text); }
