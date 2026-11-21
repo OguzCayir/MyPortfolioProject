@@ -1,42 +1,53 @@
-# Oguz's Portfolio Website
+# Oguz Kagan Cayir – Portfolio
 
-Welcome to my personal portfolio website!  
-This site highlights my background, projects, skills, and professional experience as a Software Engineering student at Brunel University.
+Personal site of Oguz Kagan Cayir, final-year BSc Computer Science (Artificial Intelligence) student at Brunel
+University London, researching demand forecasting and multi-objective routing optimisation for delivery logistics.
 
-## 🚀 Live Site
-https://oguzcayir.github.io/MyPortfolioProject/  
+**Live:** https://oguzcayir.github.io/MyPortfolioProject/
 
-## 💼 About This Project
-This portfolio was created using:
-- **HTML5** & **CSS3** – for structure and styling
-- **JavaScript** – for smooth scrolling and interactivity
-- **Responsive Design** – optimized for different screen sizes
-- **GitHub Pages** – for deployment
+## What's on the site
 
-## 📁 Project Structure
-portfolio-site/
-├── index.html
-├── style.css
-├── script.js
-├── resources/
-│ └── images/
-│ └── profile.jpg
-└── README.md
+- **Live demo:** a small NSGA-II-style optimiser runs in the browser on a toy delivery problem. Click (or use the arrow
+  keys on) the Pareto front to see the routes for each trade-off. It is illustrative only, not dissertation results.
+- **Research:** the dissertation, *Adaptive Regime-aware Algorithm Selection for Multi-objective Delivery Routing
+  with Demand Forecasting*, plus modules and AI coursework.
+- **Route map:** the path from operations (Getir, Yango, Yep!, Rudy's Vegan, Bibi's) to Computer Science at Brunel.
+- **Projects, skills, outside work and contact.**
+- **Command palette:** press `Ctrl K` / `⌘K` or `/` to jump to any section.
 
-## 📷 Features
-- Elegant, professional design inspired by muted and luxurious tones.
-- Interactive elements: hover effects on photos, smooth scrolling.
-- Highlighted skills, education, and work experience.
-- Built to be lightweight, clean, and extendable.
+## Tech
 
-## 📌 Future Plans
-- Add more photos and animations.
-- Expand with React and additional pages.
+Plain HTML, CSS and JavaScript, with no framework, no build step and no dependencies.
 
-## 👤 Author
-**Oguz Kagan Cayir**  
-[LinkedIn](https://www.linkedin.com/in/oguz-kagan-cayir/) | [GitHub](https://github.com/OguzCayir)
+- Canvas 2D for the demo and inline SVG for the route map
+- Self-hosted Instrument Serif font (SIL Open Font License) and WebP images
+- Respects `prefers-reduced-motion`; keyboard accessible
+- Lighthouse 100 / 100 / 100 / 100 on mobile and desktop at the time of publishing
 
----
+## Structure
 
-Thank you.
+```
+index.html        the page
+style.css         styles
+lab.js            live Pareto-front routing demo
+palette.js        Ctrl/⌘K command palette
+img/              optimised images and social share image (og.jpg)
+fonts/            Instrument Serif (latin subset)
+resources/images/ original photos
+legacy/           previous version of the site (not indexed)
+```
+
+## Run locally
+
+```bash
+python3 -m http.server 8000
+# open http://localhost:8000
+```
+
+## Deploy
+
+GitHub Pages serves the `main` branch from the repository root.
+
+## Contact
+
+[Email](mailto:oguzcayir99@gmail.com) · [LinkedIn](https://www.linkedin.com/in/oguz-kagan-cayir/) · [GitHub](https://github.com/OguzCayir)

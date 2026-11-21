@@ -1,245 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oguz Cayir | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1 id="intro-text"></h1>
-      <p>Welcome to my portfolio website</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oguz Kagan Cayir · Computer Science (AI), multi-objective routing and demand forecasting</title>
+  <meta name="description" content="Oguz Kagan Cayir: final-year BSc Computer Science (Artificial Intelligence) at Brunel University London, researching demand forecasting and multi-objective routing optimisation for delivery logistics, after three years leading delivery and retail operations." />
+  <meta name="author" content="Oguz Kagan Cayir" />
+  <meta name="theme-color" content="#f3efe6" />
+  <link rel="canonical" href="https://oguzcayir.github.io/MyPortfolioProject/" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://oguzcayir.github.io/MyPortfolioProject/" />
+  <meta property="og:title" content="Oguz Kagan Cayir · From the shop floor to the Pareto front" />
+  <meta property="og:description" content="Final-year BSc Computer Science (AI), Brunel University London. Multi-objective routing and demand forecasting for delivery logistics." />
+  <meta property="og:image" content="https://oguzcayir.github.io/MyPortfolioProject/img/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b1a17'/%3E%3Ctext x='16' y='21' font-family='sans-serif' font-size='13' font-weight='700' text-anchor='middle' fill='%23f3efe6'%3EOC%3C/text%3E%3C/svg%3E" />
+  <link rel="preload" href="fonts/instrument-serif-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Oguz Kagan Cayir",
+    "url": "https://oguzcayir.github.io/MyPortfolioProject/",
+    "description": "Final-year BSc Computer Science (Artificial Intelligence) student researching demand forecasting and multi-objective routing optimisation for delivery logistics.",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Brunel University London" },
+    "knowsLanguage": ["Turkish", "English"],
+    "sameAs": ["https://www.linkedin.com/in/oguz-kagan-cayir/", "https://github.com/OguzCayir"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <nav>
-      <ul class="navbar">
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
+  <header class="top">
+    <a class="mark" href="#">Oguz Kagan Cayir</a>
+    <nav aria-label="Primary">
+      <a href="#research">Research</a>
+      <a href="#route">Route</a>
+      <a href="#work">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <button id="open-palette" class="kbd-btn" type="button" aria-haspopup="dialog" aria-label="Open command palette">
+      <kbd class="kbd-hint">Ctrl K</kbd>
+    </button>
+  </header>
 
-    <main class="container">
-      <section id="about">
-        <div class="card">
-          <h2>About Me</h2>
-          <p>
-            I'm a Software Engineering student at Brunel University, on track for First Class Honours.
-            I focus on backend development with hands-on experience in Java, Spring Boot, and SQL.
-            I've built and deployed RESTful APIs backed by PostgreSQL as part of a collaborative Agile team
-            project, with practical experience in REST API design, JWT authentication, and cloud-hosted
-            databases. I'm passionate about applying scalable software solutions to real-world challenges and
-            bring adaptability and problem-solving skills from both academic and professional environments.
-          </p>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="intro">
+        <p class="prompt-line"><span class="ps1">~ $</span> whoami</p>
+        <h1 id="hero-title">Oguz Kagan Cayir</h1>
+        <p class="tagline">From the shop floor <em>to the Pareto front.</em></p>
+        <p class="lede">
+          Final-year BSc Computer Science (Artificial Intelligence) at Brunel University London, on track for
+          First Class Honours. I research machine-learning demand forecasting and multi-objective routing
+          optimisation for delivery logistics, grounded in three years leading delivery and retail operations
+          at Getir, Yango and Bibi's.
+        </p>
+        <ul class="facts" aria-label="Key facts">
+          <li><span>Dissertation</span>Regime-aware algorithm selection for multi-objective delivery routing</li>
+          <li><span>Supervisor</span>Prof. Zidong Wang</li>
+          <li><span>Methods</span>NSGA-II · MOEA/D · MOPSO · clustering · forecasting</li>
+          <li><span>Before CS</span>3 years leading delivery and retail operations in London</li>
+        </ul>
+        <div class="cta">
+          <a class="btn primary" href="#research">Read about the research</a>
+          <a class="btn" href="mailto:oguzcayir99@gmail.com">Email me</a>
+          <a class="btn ghost" href="https://github.com/OguzCayir">GitHub</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/oguz-kagan-cayir/">LinkedIn</a>
         </div>
-        <div class="about-photo">
-          <img
-            src="resources/images/profile.jpg"
-            alt="Oguz's Profile Picture"
-            class="hover-color-photo"
-          />
-        </div>
-      </section>
+      </div>
 
-      <section id="contact">
-        <div class="card">
-          <h2>Contact</h2>
-          <p>You can reach me via:</p>
+      <figure class="lab" aria-labelledby="lab-cap">
+        <div class="lab-head">
+          <span class="dot" aria-hidden="true"></span>
+          <span>live demo · bi-objective vehicle routing</span>
+          <span class="gen" id="gen">gen 0</span>
+        </div>
+        <div class="panes">
+          <canvas id="map" role="img" aria-label="Map of a toy delivery problem: one depot, 16 customers and three vehicle routes."></canvas>
+          <canvas id="front" tabindex="0" role="img"
+            aria-label="Pareto front plot. Use left and right arrow keys to pick a trade-off solution."></canvas>
+        </div>
+        <div class="lab-controls">
+          <button id="toggle" type="button">Pause</button>
+          <button id="reset" type="button">New instance</button>
+          <p id="readout" aria-live="polite">Pick a point on the front to see its routes.</p>
+        </div>
+        <figcaption id="lab-cap">
+          Toy problem generated in your browser: 3 vans, 16 customers. Objectives: total distance vs. longest single
+          route. NSGA-II-style selection with mutation only. <em>Illustrative, not dissertation results.</em>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="block" aria-labelledby="research-title">
+      <p class="label"><span class="ps1">~ $</span> cat research.md</p>
+      <h2 id="research-title">Research</h2>
+      <div class="research-grid">
+        <article class="paper">
+          <p class="kicker">Dissertation · 2026–27</p>
+          <h3>Adaptive Regime-aware Algorithm Selection for Multi-objective Delivery Routing with Demand Forecasting</h3>
+          <dl>
+            <div><dt>Supervisor</dt><dd>Prof. Zidong Wang, Brunel University London</dd></div>
+            <div><dt>What it does</dt><dd>Clusters demand regimes in London cycle-hire (TfL) data, analyses how
+              forecast error affects routing quality, and tests whether switching between NSGA-II, MOEA/D and MOPSO
+              by regime helps.</dd></div>
+            <div><dt>Grounding</dt><dd>Three years of operations leadership: how dispatch, stock and staffing decisions
+              actually work in practice.</dd></div>
+            <div><dt>Tools</dt><dd>Python, MATLAB with PlatEMO</dd></div>
+            <div><dt>Status</dt><dd>In progress</dd></div>
+          </dl>
+        </article>
+        <aside class="side" aria-labelledby="ai-title">
+          <h3 id="ai-title">AI coursework, 2026</h3>
+          <ul class="ticks">
+            <li>Four controlled CNN experiments in TensorFlow/Keras to classify brain-tumour MRI scans; model chosen on
+              validation macro-F1 and tested once on held-out data.</li>
+            <li>k-means vs. hierarchical clustering (single, complete and average linkage) on a wheat-seeds dataset in R,
+              compared with Weighted Kappa.</li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="modules" aria-labelledby="modules-title">
+        <h3 id="modules-title">Modules</h3>
+        <div class="years">
+          <div>
+            <p class="yr">Final year</p>
+            <ul class="ticks">
+              <li>Artificial Intelligence</li>
+              <li>Network Computing</li>
+              <li>Dissertation</li>
+            </ul>
+          </div>
+          <div>
+            <p class="yr">Year 2</p>
+            <ul class="ticks">
+              <li>Algorithms and their Applications <span>(genetic algorithms, hill climbing, ant colony optimisation, clustering)</span></li>
+              <li>Fundamentals of Algorithms <span>(data structures, complexity analysis)</span></li>
+              <li>Software Development and Management <span>(architecture, design patterns)</span></li>
+              <li>Usability Engineering <span>(user-centred design, usability evaluation)</span></li>
+              <li>Networks and Operating Systems <span>(TCP/IP, OS fundamentals)</span></li>
+              <li>Group Project <span>(EquiShare)</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="yr">Year 1 · First Class overall</p>
+            <ul class="ticks grades">
+              <li>Logic and Computation <b>A+</b></li>
+              <li>Data and Information <b>A</b></li>
+              <li>Group Project <b>A−</b></li>
+              <li>Introductory Programming <b>A−</b></li>
+              <li>Information Systems and Organisations <b>A−</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROUTE -->
+    <section id="route" class="block" aria-labelledby="route-title">
+      <p class="label"><span class="ps1">~ $</span> git log --oneline --reverse</p>
+      <h2 id="route-title">The route so far</h2>
+
+      <svg class="route-map" viewBox="0 0 740 250" role="img" aria-labelledby="map-title">
+        <title id="map-title">Route map. A grey line starts in Istanbul. An orange operations line runs through Getir,
+          Yango, Yep!, Rudy's Vegan and Bibi's, then meets the blue computer science line at Brunel, which continues
+          to Seoul National University and the dissertation.</title>
+        <path class="ln origin" d="M30 200 H110" />
+        <path class="ln ops" d="M110 200 H330 Q360 200 375 175 L405 125 Q420 100 450 100 H490" />
+        <path class="ln cs" d="M490 100 H580 Q610 100 625 125 L650 165 Q665 190 695 190 H705" />
+        <g class="stn grey"><circle cx="30" cy="200" r="7"/><text x="30" y="228">Istanbul</text></g>
+        <g class="stn"><circle cx="110" cy="200" r="7"/><text x="110" y="228">Getir</text></g>
+        <g class="stn"><circle cx="180" cy="200" r="7"/><text x="180" y="228">Yango</text></g>
+        <g class="stn"><circle cx="250" cy="200" r="7"/><text x="250" y="228">Yep!</text></g>
+        <g class="stn"><circle cx="320" cy="200" r="7"/><text x="320" y="228">Rudy's</text></g>
+        <g class="stn"><circle cx="445" cy="100" r="7"/><text x="445" y="134">Bibi's</text></g>
+        <g class="stn"><rect x="476" y="86" width="28" height="28" rx="14"/><text x="490" y="72">Brunel</text></g>
+        <g class="stn"><circle cx="565" cy="100" r="7"/><text x="565" y="80">SNU</text></g>
+        <g class="stn end"><circle cx="705" cy="190" r="9"/><text x="705" y="222">Research</text></g>
+      </svg>
+
+      <div class="lines">
+        <div class="line ops">
+          <p class="line-name">Operations line · London, 2021–2024</p>
+          <ol>
+            <li class="origin">
+              <p class="when">2018</p>
+              <h3>Istanbul University <span>· Faculty of Law (incomplete)</span></h3>
+              <img class="stop-img" src="img/istanbul-law-560.webp" width="560" height="350" loading="lazy"
+                alt="Istanbul University's historic main building with Turkish flags" />
+              <p>Admitted through Turkey's national university entrance exam (YKS), placing in the top 0.2% nationally.
+                Before that: high school diploma in Turkey, focused on social sciences and mathematics.</p>
+            </li>
+            <li>
+              <p class="when">Apr – Jul 2021</p>
+              <h3>Getir UK <span>· Team Leader</span></h3>
+              <p>Joined as Store Assistant, promoted within the first month. Led 15+ drivers and store assistants per
+                shift in a store handling 600+ orders a day, with the best pick and delivery times of all shifts.</p>
+            </li>
+            <li>
+              <p class="when">Jul 2021 – Aug 2022</p>
+              <h3>Yango (Yandex Go) <span>· Continuous Improvement Manager</span></h3>
+              <p>Promoted from Dark Store Manager. Brought warehouse write-offs below 2%, built a Goods Discrepancy
+                Report and Competence Matrix adopted across 5 sites, wrote 30+ SOPs and training modules for 100+ staff,
+                led planning for the "Hot Food Delivery" service, and helped reset KPI targets that improved delivery
+                times by 15%.</p>
+            </li>
+            <li>
+              <p class="when">Jun – Aug 2022</p>
+              <h3>Yep! Smart Store &amp; Delivery <span>· Operations Consultant</span></h3>
+              <p>Short contract: staff rotas and SOPs, weekly and monthly growth reporting, and customer targeting
+                work with marketing (+100 orders a day).</p>
+            </li>
+            <li>
+              <p class="when">Sep 2022 – May 2023</p>
+              <h3>Rudy's Vegan <span>· Sales &amp; Operations Lead</span></h3>
+              <p>Led London operations for a start-up food manufacturer and restaurant chain while supporting sales
+                towards annual targets. Tracked 25+ deliveries a week across production, storage and customers, and
+                sourced logistics, storage and marketing partnerships.</p>
+            </li>
+            <li>
+              <p class="when">May 2023 – Jun 2024</p>
+              <h3>Bibi's <span>· Operations Manager</span></h3>
+              <p>Ran 5 sites processing 1,000+ orders a day combined. Raised the share of opening hours with full stock
+                from about 70% to 90% per store, and cut average product cost by about 10% through supplier management
+                and stock control. Owned P&amp;L reporting and forecasts; recruited and trained staff; kept fire, H&amp;S,
+                food-safety and allergen compliance.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="line cs">
+          <p class="line-name">Computer Science line · 2024–</p>
+          <ol>
+            <li class="interchange">
+              <p class="when">2024 – 2027</p>
+              <h3>Brunel University London <span>· BSc Computer Science (AI)</span></h3>
+              <p class="change">Change here for Computer Science</p>
+              <img class="stop-img" src="img/brunel-560.webp" width="560" height="350" loading="lazy"
+                alt="Brunel University London sign on campus" />
+              <p>On track for First Class Honours; First Class overall in Year 1. <a href="#modules-title">Modules ↑</a></p>
+            </li>
+            <li>
+              <p class="when">Jul 2025 – present</p>
+              <h3>Freelance Interpreter <span>· Speed Speak Ltd</span></h3>
+              <p>Face-to-face Turkish–English interpreting alongside full-time study.</p>
+            </li>
+            <li>
+              <p class="when">Summer 2026</p>
+              <h3>Seoul National University <span>· Summer School</span></h3>
+              <p>Business AI: Machine Learning, Generative AI and Strategic Impact.</p>
+            </li>
+            <li>
+              <p class="when">Autumn 2026</p>
+              <h3>Undergraduate Teaching Assistant <span>· Brunel Computer Science</span></h3>
+              <p>Supporting first-year lab sessions in Information Systems and Organisations.</p>
+            </li>
+            <li class="end">
+              <p class="when">2026 – 2027</p>
+              <h3>Dissertation</h3>
+              <p>Demand regimes, forecasting and multi-objective delivery routing. <a href="#research">Details ↑</a></p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="work" class="block" aria-labelledby="work-title">
+      <p class="label"><span class="ps1">~ $</span> cd ~/work</p>
+      <h2 id="work-title">Projects</h2>
+      <div class="term">
+        <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>oguz@brunel: ~/work</span></div>
+        <p class="term-cmd"><span class="ps1">~/work $</span> ls -l</p>
+        <ul class="rows">
+          <li>
+            <span class="perm" aria-hidden="true">drwx------</span>
+            <div><h3>fyp-logistics-optimisation/ <span class="tag">private</span></h3>
+              <p>Dissertation code: regime clustering on TfL cycle-hire data, demand forecasting, and NSGA-II / MOEA/D /
+                MOPSO comparisons in PlatEMO.</p></div>
+            <span class="lang">MATLAB · Python</span>
+          </li>
+          <li>
+            <span class="perm" aria-hidden="true">drwxr-xr-x</span>
+            <div><h3><a href="https://github.com/OguzCayir/EquiShare">equishare/</a> <span class="yr-tag">2025–26</span></h3>
+              <p>Cross-university equipment booking platform, 4-person Agile team. Scrum Master in Sprint 1 and Database
+                Lead: 6 REST API endpoints, PostgreSQL schema, JWT authentication with Spring Security, tested with
+                JUnit 5 and Mockito. Connected the live backend to the HTML/JS frontend, replacing all mock JSON data.</p></div>
+            <span class="lang">Java · Spring Boot · PostgreSQL</span>
+          </li>
+          <li>
+            <span class="perm" aria-hidden="true">drwxr-xr-x</span>
+            <div><h3><a href="https://github.com/OguzCayir/University-Attendance-Monitoring">attendance-monitoring/</a> <span class="yr-tag">2024–25</span></h3>
+              <p>Year 1 Java Swing desktop app on SQLite via JDBC handling 400,000+ student records: student and admin
+                roles, date-range filtering with custom SQL date logic, and a pie chart drawn from scratch with Graphics2D.</p></div>
+            <span class="lang">Java Swing · SQLite</span>
+          </li>
+          <li>
+            <span class="perm" aria-hidden="true">drwxr-xr-x</span>
+            <div><h3>ai-module-labs/ <span class="yr-tag">2026</span></h3>
+              <p>CNN experiments for brain-tumour MRI classification (TensorFlow/Keras); clustering comparison in R.</p></div>
+            <span class="lang">Python · TensorFlow · R</span>
+          </li>
+          <li>
+            <span class="perm" aria-hidden="true">drwxr-xr-x</span>
+            <div><h3>expense-tracker/</h3>
+              <p>Python application that tracks personal expenses and generates reports, stored in SQLite.</p></div>
+            <span class="lang">Python · SQLite</span>
+          </li>
+          <li>
+            <span class="perm" aria-hidden="true">drwxr-xr-x</span>
+            <div><h3><a href="https://github.com/OguzCayir/MyPortfolioProject">portfolio/</a></h3>
+              <p>This site: plain HTML, CSS and JavaScript with no dependencies. The hero demo is a small NSGA-II-style
+                optimiser drawn on canvas.</p></div>
+            <span class="lang">HTML · CSS · JS</span>
+          </li>
+        </ul>
+        <p class="term-cmd"><span class="ps1">~/work $</span> <span class="dim">press <kbd class="kbd-hint">Ctrl K</kbd> to jump anywhere</span><span class="cursor" aria-hidden="true"></span></p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="block" aria-labelledby="skills-title">
+      <p class="label"><span class="ps1">~ $</span> cat skills.txt</p>
+      <h2 id="skills-title">Skills</h2>
+      <dl class="skills">
+        <div><dt>Programming &amp; ML</dt><dd>Python, TensorFlow, R, Java, SQL, MATLAB, Go (beginner)</dd></div>
+        <div><dt>Optimisation &amp; data</dt><dd>Multi-objective optimisation (NSGA-II, MOEA/D, MOPSO via PlatEMO), clustering, demand forecasting, Excel, SPSS</dd></div>
+        <div><dt>Backend &amp; databases</dt><dd>Spring Boot, Spring Data JPA, Spring Security, Maven, REST APIs, JWT, PostgreSQL, SQLite, JDBC</dd></div>
+        <div><dt>Testing &amp; tools</dt><dd>JUnit 5, Mockito, Git, Docker, UML, Agile / Scrum, CI/CD principles, AWS basics</dd></div>
+        <div><dt>Frontend &amp; UX</dt><dd>HTML, CSS, JavaScript, Java Swing, React (beginner), Figma, usability evaluation</dd></div>
+        <div><dt>Self-directed</dt><dd>Local LLMs (Hugging Face, Ollama), Linux</dd></div>
+        <div><dt>Operations</dt><dd>P&amp;L and forecasting, SOP and training design, KPI tracking, team leadership</dd></div>
+        <div><dt>Languages</dt><dd>Turkish (native), English (fluent)</dd></div>
+      </dl>
+    </section>
+
+    <!-- OUTSIDE WORK -->
+    <section id="beyond" class="block beyond" aria-labelledby="beyond-title">
+      <img class="portrait" src="img/profile-560.webp" width="560" height="675" loading="lazy" alt="Oguz Kagan Cayir outdoors in winter, arms crossed, wearing a dark coat and scarf" />
+      <div>
+        <p class="label"><span class="ps1">~ $</span> cat outside-work.md</p>
+        <h2 id="beyond-title">Outside work</h2>
+        <div class="trio">
+          <div><h3>Swimming</h3><p>Competitive-level training in high school; prepared for a regional competition in
+            Turkey before prioritising my studies.</p></div>
+          <div><h3>Travel</h3><p>Japan, South Korea, Thailand, China, Germany, Italy, Hungary. EU-funded exchange
+            programmes at school: Comenius (Hungary, 2014), Erasmus (Poland, 2017), YouthPass (Italy, 2017).</p></div>
+          <div><h3>Reading</h3><p>Philosophy, history, psychology and sociology.</p></div>
+        </div>
+        <div class="shelf" aria-labelledby="shelf-title">
+          <h3 id="shelf-title">On the shelf</h3>
           <ul>
-            <li>
-              Email: <a href="mailto:oguzcayir99@gmail.com">oguzcayir99@gmail.com</a>
-            </li>
-            <li>
-              LinkedIn:
-              <a
-                href="https://www.linkedin.com/in/oguz-kagan-cayir/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >linkedin.com/in/oguz-kagan-cayir</a>
-            </li>
-            <li>
-              GitHub:
-              <a
-                href="https://github.com/OguzCayir"
-                target="_blank"
-                rel="noopener noreferrer"
-              >github.com/OguzCayir</a>
-            </li>
+            <li><cite>Sophie's World</cite> <span>Jostein Gaarder</span></li>
+            <li><cite>1984</cite> <span>George Orwell</span></li>
+            <li><cite>Animal Farm</cite> <span>George Orwell</span></li>
+            <li><cite>The Metamorphosis</cite> <span>Franz Kafka</span></li>
+            <li><cite>The Art of War</cite> <span>Sun Tzu</span></li>
+            <li><cite>The Little Prince</cite> <span>Antoine de Saint-Exupéry</span></li>
           </ul>
         </div>
-        <div class="contact-photo">
-          <img
-            src="resources/images/contactMe.PNG"
-            alt="Contact illustration"
-            class="hover-color-photo"
-          />
-        </div>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section id="education">
-        <div class="card">
-          <h2>Education</h2>
+  <footer id="contact">
+    <p class="sign">Write to me.</p>
+    <p class="contact-links">
+      <a href="mailto:oguzcayir99@gmail.com">oguzcayir99@gmail.com</a>
+      <a href="https://www.linkedin.com/in/oguz-kagan-cayir/">LinkedIn</a>
+      <a href="https://github.com/OguzCayir">GitHub</a>
+    </p>
+    <p class="small">Based in London. Interested in applying machine learning and optimisation to logistics and
+      operational decision-making.</p>
+  </footer>
 
-          <h3>Brunel University London</h3>
-          <p><strong>BSc in Computer Science / Software Engineering</strong> (2024 – 2027, Expected First Class)</p>
-          <p>
-            <em>Year Two Modules:</em> Software Development and Management, Usability Engineering,
-            Fundamentals of Algorithms, Algorithms and their Applications, Networks and Operating Systems,
-            Group Project. Covered software architecture and design patterns, user-centred design and
-            usability evaluation, TCP/IP networking and OS fundamentals, and algorithms spanning data
-            structures, complexity analysis, and optimisation techniques including genetic algorithms,
-            hill climbing, ant colony optimisation, and data clustering.
-          </p>
-          <p>
-            <em>Year One Modules (First Class overall):</em> Logic and Computation (A+), Data and
-            Information (A), Group Project (A-), Introductory Programming (A-), Information Systems
-            and Organisations (A-)
-          </p>
+  <dialog id="palette" aria-label="Command palette">
+    <input id="pal-input" role="combobox" aria-expanded="true" aria-controls="pal-list" aria-autocomplete="list" placeholder="Jump to…" />
+    <ul id="pal-list" role="listbox"></ul>
+    <p class="pal-foot">↑↓ move · Enter open · Esc close</p>
+  </dialog>
 
-          <h3>Seoul National University, South Korea</h3>
-          <p><strong>Summer School – Summer 2026</strong></p>
-          <p>Business AI: Machine Learning, Generative AI, and Strategic Impact</p>
-
-          <h3>Istanbul University — Law Faculty</h3>
-          <p>
-            Studied Law before transitioning to Computer Science (Incomplete).
-            Admitted following top 0.19% placement (rank 3,624 / 1,877,568) in the Turkish National
-            University Entrance Exam (YKS).
-          </p>
-
-          <h3>High School Diploma (Turkey)</h3>
-          <p>Completed with a focus on Social Sciences and Mathematics.</p>
-        </div>
-
-        <div class="education-photo">
-          <img src="resources/images/graduation.jpg" alt="Graduation" class="hover-color-photo" />
-          <img src="resources/images/lawfaculty2.jpg" alt="Istanbul University Law Faculty" class="hover-color-photo" />
-          <img src="resources/images/brunel.jpg" alt="Brunel University" class="hover-color-photo" />
-        </div>
-      </section>
-
-      <section id="skills" class="card">
-        <h2>Skills</h2>
-        <ul>
-          <li>
-            <strong>Languages:</strong> Java (Intermediate), SQL (Intermediate), Python (Intermediate), Go (Beginner)
-          </li>
-          <li>
-            <strong>Backend:</strong> Spring Boot, Spring Data JPA, Spring Security, Maven, REST API Design, JWT Authentication
-          </li>
-          <li>
-            <strong>Databases:</strong> PostgreSQL, SQLite, JDBC, JSON Data Handling
-          </li>
-          <li>
-            <strong>Testing:</strong> JUnit 5, Mockito, Manual Testing, Debugging
-          </li>
-          <li>
-            <strong>Frontend:</strong> HTML, CSS, Java Swing, React (Beginner), Figma (UI/UX Basics)
-          </li>
-          <li>
-            <strong>Tools & Practices:</strong> Git & GitHub, Agile Collaboration, UML Modelling, CI/CD Principles, Docker
-          </li>
-          <li>
-            <strong>Cloud & Data:</strong> AWS Basics, IBM SPSS, Excel, Data Analysis & Interpretation, SaaS Product Knowledge
-          </li>
-          <li>
-            <strong>Professional Strengths:</strong> Communication, Problem-Solving, Leadership, Operations Management
-          </li>
-        </ul>
-      </section>
-
-      <section id="experience" class="card">
-        <h2>Experience</h2>
-
-        <h3><em>Bibi's | Operations Manager</em></h3>
-        <p>London | May 2023 – June 2024</p>
-        <ul>
-          <li>Oversaw operations across multiple locations, processing 1,000+ daily orders</li>
-          <li>Created and maintained P&L reports, forecasts, and supplier communication</li>
-          <li>Recruited, trained, and supervised staff, ensuring compliance with H&S and food safety standards</li>
-        </ul>
-
-        <h3><em>Rudy's Vegan | Sales & Operations Lead</em></h3>
-        <p>London | Jun 2022 – May 2023</p>
-        <ul>
-          <li>Managed logistics between production, warehouse, and customers</li>
-          <li>Supported sales team in client presentations, delivery tracking, and deal execution</li>
-          <li>Sourced logistics and marketing partnerships to improve operational efficiency</li>
-        </ul>
-
-        <h3><em>Yango (Yandex Go) | Continuous Improvement Manager</em></h3>
-        <p>London | Jul 2021 – Aug 2022</p>
-        <ul>
-          <li>Developed monthly Goods Discrepancy Report and staff Competence Matrix</li>
-          <li>Trained and supervised teams using structured SOPs and ISpring platform</li>
-          <li>Led launch planning for "Hot Food Delivery" initiative — cost, menu, packaging</li>
-          <li>Designed 30+ SOPs and competency training modules using ISpring</li>
-          <li>Audited performance data and reduced warehouse write-offs to &lt;2%</li>
-          <li>Collaborated with commercial and supply chain to improve KPI targets</li>
-        </ul>
-
-        <h3><em>Getir UK | Team Leader</em></h3>
-        <p>London | Apr 2021 – Jul 2021</p>
-        <ul>
-          <li>Promoted to lead shifts with 15+ team members in a store handling 600+ orders daily</li>
-          <li>Achieved top results in order pick and delivery time metrics</li>
-        </ul>
-      </section>
-
-      <section id="projects" class="card">
-        <h2>Projects</h2>
-
-        <h3>EquiShare – Cross-University Equipment Booking Platform</h3>
-        <p><em>2025–2026 | Java, Spring Boot, PostgreSQL, Spring Security, JUnit 5, Mockito</em></p>
-        <p>
-          A full-stack group project built with a 4-person Agile team at Brunel University. Served as Scrum Master
-          in Sprint 1 and Database Lead for backend development. Built 6 RESTful API endpoints, designed a
-          PostgreSQL database schema, integrated Spring Security with JWT-based authentication, and validated
-          backend logic with JUnit 5 and Mockito. Connected the live backend to frontend HTML/JS pages,
-          replacing all mock JSON data with real API calls.
-        </p>
-
-        <h3>University Management System – Attendance Monitoring</h3>
-        <p><em>2024–2025 | Java, Java Swing, SQLite, JDBC</em></p>
-        <p>
-          A Year 1 Java desktop application built to monitor student attendance, supporting both student and
-          admin roles. Developed a multi-panel GUI using Java Swing and connected it to a SQLite database via
-          JDBC, capable of handling over 400,000 student records. Implemented role-based authentication,
-          date-range filtering with custom SQL date formatting logic, and an admin dashboard with search and
-          filter capabilities. Built a custom pie chart visualisation from scratch using Java's Graphics2D
-          library, with no external dependencies.
-        </p>
-
-        <h3>Personal Portfolio Website</h3>
-        <p><em>HTML, CSS, JavaScript</em></p>
-        <p>
-          This website — built with HTML, CSS, and vanilla JavaScript, featuring smooth scroll, an
-          Intersection Observer for fade-in animations, and active nav highlighting on scroll.
-        </p>
-
-        <h3>Expense Tracker</h3>
-        <p><em>Python, SQLite</em></p>
-        <p>
-          A Python application that tracks personal expenses and generates reports, using SQLite for storage.
-        </p>
-
-        <h3>International Achievements</h3>
-        <ul>
-          <li>
-            Participated in three EU-funded international exchange programmes during secondary school —
-            Comenius (Hungary, 2014), Erasmus (Poland, 2017), YouthPass (Italy, 2017)
-          </li>
-        </ul>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+  <script src="lab.js" defer></script>
+  <script src="palette.js" defer></script>
+</body>
 </html>
