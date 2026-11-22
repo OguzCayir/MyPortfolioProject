@@ -3,7 +3,7 @@
 Personal site of Oguz Kagan Cayir, final-year BSc Computer Science (Artificial Intelligence) student at Brunel
 University London, researching demand forecasting and multi-objective routing optimisation for delivery logistics.
 
-**Live:** https://oguzcayir.github.io/MyPortfolioProject/
+**Live:** https://oguzcayir.github.io/
 
 ## What's on the site
 
@@ -47,7 +47,7 @@ python3 -m http.server 8000
 
 ## Deploy
 
-GitHub Pages serves the `main` branch from the repository root.
+GitHub Pages serves the `main` branch from the repository root (user site: this repo is named `OguzCayir.github.io`).
 
 ## Contact
 

@@ -7,12 +7,12 @@
   <meta name="description" content="Oguz Kagan Cayir: final-year BSc Computer Science (Artificial Intelligence) at Brunel University London, researching demand forecasting and multi-objective routing optimisation for delivery logistics, after three years leading delivery and retail operations." />
   <meta name="author" content="Oguz Kagan Cayir" />
   <meta name="theme-color" content="#f3efe6" />
-  <link rel="canonical" href="https://oguzcayir.github.io/MyPortfolioProject/" />
+  <link rel="canonical" href="https://oguzcayir.github.io/" />
   <meta property="og:type" content="profile" />
-  <meta property="og:url" content="https://oguzcayir.github.io/MyPortfolioProject/" />
+  <meta property="og:url" content="https://oguzcayir.github.io/" />
   <meta property="og:title" content="Oguz Kagan Cayir · From the shop floor to the Pareto front" />
   <meta property="og:description" content="Final-year BSc Computer Science (AI), Brunel University London. Multi-objective routing and demand forecasting for delivery logistics." />
-  <meta property="og:image" content="https://oguzcayir.github.io/MyPortfolioProject/img/og.jpg" />
+  <meta property="og:image" content="https://oguzcayir.github.io/img/og.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -24,7 +24,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Oguz Kagan Cayir",
-    "url": "https://oguzcayir.github.io/MyPortfolioProject/",
+    "url": "https://oguzcayir.github.io/",
     "description": "Final-year BSc Computer Science (Artificial Intelligence) student researching demand forecasting and multi-objective routing optimisation for delivery logistics.",
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Brunel University London" },
     "knowsLanguage": ["Turkish", "English"],
@@ -57,15 +57,15 @@
         <h1 id="hero-title">Oguz Kagan Cayir</h1>
         <p class="tagline">From the shop floor <em>to the Pareto front.</em></p>
         <p class="lede">
-          Final-year BSc Computer Science (Artificial Intelligence) at Brunel University London, on track for
-          First Class Honours. I research machine-learning demand forecasting and multi-objective routing
+          Final-year BSc Computer Science (Artificial Intelligence) at Brunel University London, graduating in 2027
+          and on track for First Class Honours. I research machine-learning demand forecasting and multi-objective routing
           optimisation for delivery logistics, grounded in three years leading delivery and retail operations
           at Getir, Yango and Bibi's.
         </p>
         <ul class="facts" aria-label="Key facts">
           <li><span>Dissertation</span>Regime-aware algorithm selection for multi-objective delivery routing</li>
           <li><span>Supervisor</span>Prof. Zidong Wang</li>
-          <li><span>Methods</span>NSGA-II · MOEA/D · MOPSO · clustering · forecasting</li>
+          <li><span>Methods</span>NSGA-II · NSGA-III · MOEA/D · SMS-EMOA · forecasting · clustering</li>
           <li><span>Before CS</span>3 years leading delivery and retail operations in London</li>
         </ul>
         <div class="cta">
@@ -108,17 +108,23 @@
       <h2 id="research-title">Research</h2>
       <div class="research-grid">
         <article class="paper">
-          <p class="kicker">Dissertation · 2026–27</p>
+          <p class="kicker">Dissertation · 2026–27 · due March 2027</p>
           <h3>Adaptive Regime-aware Algorithm Selection for Multi-objective Delivery Routing with Demand Forecasting</h3>
           <dl>
             <div><dt>Supervisor</dt><dd>Prof. Zidong Wang, Brunel University London</dd></div>
-            <div><dt>What it does</dt><dd>Clusters demand regimes in London cycle-hire (TfL) data, analyses how
-              forecast error affects routing quality, and tests whether switching between NSGA-II, MOEA/D and MOPSO
-              by regime helps.</dd></div>
-            <div><dt>Grounding</dt><dd>Three years of operations leadership: how dispatch, stock and staffing decisions
-              actually work in practice.</dd></div>
+            <div><dt>Question</dt><dd>When demand shifts between regimes (weekdays, seasonal peaks, holidays), does switching
+              between multi-objective optimisers beat always using the single best one, once forecast error and the
+              cost of switching are counted?</dd></div>
+            <div><dt>Approach</dt><dd>A two-layer system. Demand forecasts and clustered regimes decide which algorithm to
+              run; the optimiser returns a Pareto front of routes trading off distance (cost) against lateness
+              (customer satisfaction), on vehicle routing with time windows.</dd></div>
+            <div><dt>Algorithms</dt><dd>NSGA-II, NSGA-III, MOEA/D, SMS-EMOA</dd></div>
+            <div><dt>Progress</dt><dd>Pilot of 16,080 runs on 54 Solomon benchmark instances in MATLAB/PlatEMO. Early
+              signs are that the benefit of switching may be narrow, and a clear negative result would still answer
+              the question.</dd></div>
+            <div><dt>Evaluation</dt><dd>Against the best single algorithm on unseen data and held-out regimes, with a
+              minimum improvement fixed in advance and statistical tests over repeated runs.</dd></div>
             <div><dt>Tools</dt><dd>Python, MATLAB with PlatEMO</dd></div>
-            <div><dt>Status</dt><dd>In progress</dd></div>
           </dl>
         </article>
         <aside class="side" aria-labelledby="ai-title">
@@ -133,35 +139,39 @@
       </div>
 
       <div class="modules" aria-labelledby="modules-title">
-        <h3 id="modules-title">Modules</h3>
+        <h3 id="modules-title">Modules and grades</h3>
         <div class="years">
           <div>
-            <p class="yr">Final year</p>
+            <p class="yr">Final year · 2026–27</p>
             <ul class="ticks">
               <li>Artificial Intelligence</li>
               <li>Network Computing</li>
-              <li>Dissertation</li>
+              <li>Final-year project (dissertation)</li>
             </ul>
+            <p class="grade-note">Brunel grades: A* (90+), A+ (80–89), A (73–79), A− (70–72) are all First Class bands.</p>
           </div>
           <div>
-            <p class="yr">Year 2</p>
-            <ul class="ticks">
-              <li>Algorithms and their Applications <span>(genetic algorithms, hill climbing, ant colony optimisation, clustering)</span></li>
-              <li>Fundamentals of Algorithms <span>(data structures, complexity analysis)</span></li>
-              <li>Software Development and Management <span>(architecture, design patterns)</span></li>
-              <li>Usability Engineering <span>(user-centred design, usability evaluation)</span></li>
-              <li>Networks and Operating Systems <span>(TCP/IP, OS fundamentals)</span></li>
-              <li>Group Project <span>(EquiShare)</span></li>
-            </ul>
-          </div>
-          <div>
-            <p class="yr">Year 1 · First Class overall</p>
+            <p class="yr">Year 2 · 2025–26</p>
             <ul class="ticks grades">
-              <li>Logic and Computation <b>A+</b></li>
-              <li>Data and Information <b>A</b></li>
-              <li>Group Project <b>A−</b></li>
-              <li>Introductory Programming <b>A−</b></li>
-              <li>Information Systems and Organisations <b>A−</b></li>
+              <li><span class="m">Algorithms and their Applications <span>(genetic algorithms, hill climbing, ant colony optimisation, clustering)</span></span><b>A*</b></li>
+              <li><span class="m">Software Development and Management <span>(architecture, design patterns)</span></span><b>A+</b></li>
+              <li><span class="m">Group Project: Individual Project Report <span>(EquiShare)</span></span><b>A+</b></li>
+              <li><span class="m">Networks and Operating Systems <span>(TCP/IP, OS fundamentals)</span></span><b>A</b></li>
+              <li><span class="m">Fundamentals of Algorithms <span>(data structures, complexity analysis)</span></span><b>A−</b></li>
+              <li><span class="m">Usability Engineering <span>(user-centred design, usability evaluation)</span></span><b>A−</b></li>
+              <li><span class="m">Group Project: Proposal and Contribution Plan</span><b>B+</b></li>
+            </ul>
+          </div>
+          <div>
+            <p class="yr">Year 1 · 2024–25</p>
+            <ul class="ticks grades">
+              <li><span class="m">Logic and Computation</span><b>A+</b></li>
+              <li><span class="m">Data and Information</span><b>A</b></li>
+              <li><span class="m">Group Project</span><b>A−</b></li>
+              <li><span class="m">Introductory Programming</span><b>A−</b></li>
+              <li><span class="m">Information Systems and Organisations</span><b>A−</b></li>
+              <li><span class="m">Programming Applications</span><b>B</b></li>
+              <li><span class="m">Interactive Learning Skills and Communication</span><b>B</b></li>
             </ul>
           </div>
         </div>
@@ -250,7 +260,7 @@
               <p class="change">Change here for Computer Science</p>
               <img class="stop-img" src="img/brunel-560.webp" width="560" height="350" loading="lazy"
                 alt="Brunel University London sign on campus" />
-              <p>On track for First Class Honours; First Class overall in Year 1. <a href="#modules-title">Modules ↑</a></p>
+              <p>On track for First Class Honours, graduating 2027. A* in Algorithms and their Applications. <a href="#modules-title">Grades ↑</a></p>
             </li>
             <li>
               <p class="when">Jul 2025 – present</p>
@@ -270,7 +280,7 @@
             <li class="end">
               <p class="when">2026 – 2027</p>
               <h3>Dissertation</h3>
-              <p>Demand regimes, forecasting and multi-objective delivery routing. <a href="#research">Details ↑</a></p>
+              <p>Regime-aware algorithm selection for multi-objective delivery routing. <a href="#research">Details ↑</a></p>
             </li>
           </ol>
         </div>
@@ -288,8 +298,8 @@
           <li>
             <span class="perm" aria-hidden="true">drwx------</span>
             <div><h3>fyp-logistics-optimisation/ <span class="tag">private</span></h3>
-              <p>Dissertation code: regime clustering on TfL cycle-hire data, demand forecasting, and NSGA-II / MOEA/D /
-                MOPSO comparisons in PlatEMO.</p></div>
+              <p>Dissertation code: demand forecasting, regime clustering, and NSGA-II / NSGA-III / MOEA/D / SMS-EMOA
+                comparisons on Solomon benchmarks in PlatEMO.</p></div>
             <span class="lang">MATLAB · Python</span>
           </li>
           <li>
@@ -315,13 +325,15 @@
           </li>
           <li>
             <span class="perm" aria-hidden="true">drwxr-xr-x</span>
-            <div><h3>expense-tracker/</h3>
-              <p>Python application that tracks personal expenses and generates reports, stored in SQLite.</p></div>
-            <span class="lang">Python · SQLite</span>
+            <div><h3>file-recovery-tool/ <span class="tag">in progress</span></h3>
+              <p>Personal project: a Python tool to recover deleted photos and videos (JPEG, MP4) from SD cards and USB
+                drives by file carving, scanning raw bytes for file signatures. Planned as a tested CLI first, then a
+                simple GUI for non-technical users and a packaged macOS app.</p></div>
+            <span class="lang">Python</span>
           </li>
           <li>
             <span class="perm" aria-hidden="true">drwxr-xr-x</span>
-            <div><h3><a href="https://github.com/OguzCayir/MyPortfolioProject">portfolio/</a></h3>
+            <div><h3><a href="https://github.com/OguzCayir/OguzCayir.github.io">portfolio/</a></h3>
               <p>This site: plain HTML, CSS and JavaScript with no dependencies. The hero demo is a small NSGA-II-style
                 optimiser drawn on canvas.</p></div>
             <span class="lang">HTML · CSS · JS</span>
