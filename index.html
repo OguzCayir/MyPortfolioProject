@@ -65,7 +65,7 @@
         <ul class="facts" aria-label="Key facts">
           <li><span>Dissertation</span>Regime-aware algorithm selection for multi-objective delivery routing</li>
           <li><span>Supervisor</span>Prof. Zidong Wang</li>
-          <li><span>Methods</span>NSGA-II · NSGA-III · MOEA/D · SMS-EMOA · forecasting · clustering</li>
+          <li><span>Methods</span>NSGA-II/III · MOEA/D · SMS-EMOA · MOPSO · demand forecasting</li>
           <li><span>Before CS</span>3 years leading delivery and retail operations in London</li>
         </ul>
         <div class="cta">
@@ -118,10 +118,12 @@
             <div><dt>Approach</dt><dd>A two-layer system. Demand forecasts and clustered regimes decide which algorithm to
               run; the optimiser returns a Pareto front of routes trading off distance (cost) against lateness
               (customer satisfaction), on vehicle routing with time windows.</dd></div>
-            <div><dt>Algorithms</dt><dd>NSGA-II, NSGA-III, MOEA/D, SMS-EMOA</dd></div>
-            <div><dt>Progress</dt><dd>Pilot of 16,080 runs on 54 Solomon benchmark instances in MATLAB/PlatEMO. Early
-              signs are that the benefit of switching may be narrow, and a clear negative result would still answer
-              the question.</dd></div>
+            <div><dt>Algorithms</dt><dd>NSGA-II, NSGA-III, MOEA/D, SMS-EMOA, MOPSO</dd></div>
+            <div><dt>Data</dt><dd>London cycle-hire (TfL) public demand data; Solomon VRPTW benchmark instances</dd></div>
+            <div><dt>Progress</dt><dd>The benchmark stage is complete: NSGA-II, MOEA/D and MOPSO compared on full
+              100-customer Solomon instances, including tracing MOEA/D's poor results to a default configuration choice.
+              Forecasting tests on TfL cycle-hire data are under way, with regime clustering, the selection layer and
+              evaluation on held-out regimes to follow by March 2027.</dd></div>
             <div><dt>Evaluation</dt><dd>Against the best single algorithm on unseen data and held-out regimes, with a
               minimum improvement fixed in advance and statistical tests over repeated runs.</dd></div>
             <div><dt>Tools</dt><dd>Python, MATLAB with PlatEMO</dd></div>
@@ -148,7 +150,6 @@
               <li>Network Computing</li>
               <li>Final-year project (dissertation)</li>
             </ul>
-            <p class="grade-note">Brunel grades: A* (90+), A+ (80–89), A (73–79), A− (70–72) are all First Class bands.</p>
           </div>
           <div>
             <p class="yr">Year 2 · 2025–26</p>
@@ -159,7 +160,6 @@
               <li><span class="m">Networks and Operating Systems <span>(TCP/IP, OS fundamentals)</span></span><b>A</b></li>
               <li><span class="m">Fundamentals of Algorithms <span>(data structures, complexity analysis)</span></span><b>A−</b></li>
               <li><span class="m">Usability Engineering <span>(user-centred design, usability evaluation)</span></span><b>A−</b></li>
-              <li><span class="m">Group Project: Proposal and Contribution Plan</span><b>B+</b></li>
             </ul>
           </div>
           <div>
@@ -170,8 +170,6 @@
               <li><span class="m">Group Project</span><b>A−</b></li>
               <li><span class="m">Introductory Programming</span><b>A−</b></li>
               <li><span class="m">Information Systems and Organisations</span><b>A−</b></li>
-              <li><span class="m">Programming Applications</span><b>B</b></li>
-              <li><span class="m">Interactive Learning Skills and Communication</span><b>B</b></li>
             </ul>
           </div>
         </div>
@@ -260,7 +258,7 @@
               <p class="change">Change here for Computer Science</p>
               <img class="stop-img" src="img/brunel-560.webp" width="560" height="350" loading="lazy"
                 alt="Brunel University London sign on campus" />
-              <p>On track for First Class Honours, graduating 2027. A* in Algorithms and their Applications. <a href="#modules-title">Grades ↑</a></p>
+              <p>On track for First Class Honours, graduating 2027. <a href="#modules-title">Grades ↑</a></p>
             </li>
             <li>
               <p class="when">Jul 2025 – present</p>
@@ -298,8 +296,8 @@
           <li>
             <span class="perm" aria-hidden="true">drwx------</span>
             <div><h3>fyp-logistics-optimisation/ <span class="tag">private</span></h3>
-              <p>Dissertation code: demand forecasting, regime clustering, and NSGA-II / NSGA-III / MOEA/D / SMS-EMOA
-                comparisons on Solomon benchmarks in PlatEMO.</p></div>
+              <p>Dissertation code: demand forecasting and regime clustering on TfL cycle-hire data, and multi-objective
+                algorithm comparisons on Solomon benchmarks in PlatEMO.</p></div>
             <span class="lang">MATLAB · Python</span>
           </li>
           <li>
@@ -348,12 +346,12 @@
       <p class="label"><span class="ps1">~ $</span> cat skills.txt</p>
       <h2 id="skills-title">Skills</h2>
       <dl class="skills">
-        <div><dt>Programming &amp; ML</dt><dd>Python, TensorFlow, R, Java, SQL, MATLAB, Go (beginner)</dd></div>
-        <div><dt>Optimisation &amp; data</dt><dd>Multi-objective optimisation (NSGA-II, MOEA/D, MOPSO via PlatEMO), clustering, demand forecasting, Excel, SPSS</dd></div>
-        <div><dt>Backend &amp; databases</dt><dd>Spring Boot, Spring Data JPA, Spring Security, Maven, REST APIs, JWT, PostgreSQL, SQLite, JDBC</dd></div>
-        <div><dt>Testing &amp; tools</dt><dd>JUnit 5, Mockito, Git, Docker, UML, Agile / Scrum, CI/CD principles, AWS basics</dd></div>
-        <div><dt>Frontend &amp; UX</dt><dd>HTML, CSS, JavaScript, Java Swing, React (beginner), Figma, usability evaluation</dd></div>
-        <div><dt>Self-directed</dt><dd>Local LLMs (Hugging Face, Ollama), Linux</dd></div>
+        <div><dt>Programming &amp; ML</dt><dd>Python, TensorFlow, R, Java, SQL, MATLAB</dd></div>
+        <div><dt>Optimisation &amp; data</dt><dd>Multi-objective optimisation (NSGA-II/III, MOEA/D, SMS-EMOA, MOPSO via PlatEMO), clustering, demand forecasting, Excel, SPSS</dd></div>
+        <div><dt>Backend &amp; databases</dt><dd>Spring (Boot, Data JPA, Security), REST APIs, JWT, PostgreSQL, SQLite, JDBC</dd></div>
+        <div><dt>Testing &amp; delivery</dt><dd>JUnit 5 with Mockito, Maven, Docker, Agile / Scrum, UML, CI/CD principles, AWS basics</dd></div>
+        <div><dt>Frontend &amp; UX</dt><dd>HTML, CSS, JavaScript, React, Java Swing, Figma, usability evaluation</dd></div>
+        <div><dt>Self-directed</dt><dd>Local LLMs (Hugging Face, Ollama)</dd></div>
         <div><dt>Operations</dt><dd>P&amp;L and forecasting, SOP and training design, KPI tracking, team leadership</dd></div>
         <div><dt>Languages</dt><dd>Turkish (native), English (fluent)</dd></div>
       </dl>
@@ -395,8 +393,8 @@
       <a href="https://www.linkedin.com/in/oguz-kagan-cayir/">LinkedIn</a>
       <a href="https://github.com/OguzCayir">GitHub</a>
     </p>
-    <p class="small">Based in London. Interested in applying machine learning and optimisation to logistics and
-      operational decision-making.</p>
+    <p class="small">Based in London, with full right to work in the UK (Indefinite Leave to Remain). Interested in
+      applying machine learning and optimisation to logistics and operational decision-making.</p>
   </footer>
 
   <dialog id="palette" aria-label="Command palette">
